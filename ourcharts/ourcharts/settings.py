@@ -25,7 +25,7 @@ SECRET_KEY = 'i$ay91p2%ao)yp+f8+^a1+hk9=utk#jm4l^f^u5=ao)0^c%dbf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'taxi',
 ]
 
 MIDDLEWARE = [
@@ -80,9 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tenman',
         'USER':'root',
-        'PASSWORD':'2017151050',
+        'PASSWORD':'',
         'HOST':'127.0.0.1',
-        'PORT':'3308',
+        'PORT':'3306',
     }
 }
 
