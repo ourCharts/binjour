@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'chat',
     'taxi',
 ]
 
@@ -70,7 +72,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'ourcharts.wsgi.application'
-
+# Channels
+ASGI_APPLICATION = 'ourcharts.routing.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

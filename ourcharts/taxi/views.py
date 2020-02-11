@@ -23,3 +23,6 @@ def initial_status(request):
 
 def test(request):
     return render(request,"showuser.html")
+
+def track(request):
+    return render(request,"room.html")

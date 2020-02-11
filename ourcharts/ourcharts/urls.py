@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 import taxi.views as taxi_view
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     url(r'^test/$', taxi_view.test),
     url(r'^initial_status/$', taxi_view.initial_status),
+    path('chat/', include('chat.urls')),
+    path('room/', taxi_view.track),
 ]
