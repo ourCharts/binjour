@@ -36,3 +36,4 @@ class ChatConsumer(WebsocketConsumer):
                 'message': message
             }))
             time.sleep(0.1)#设置发送间隔时间单位（秒）
+        self.disconnect()
