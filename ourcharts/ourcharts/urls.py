@@ -21,6 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     url(r'^test/$', taxi_view.test),
     url(r'^initial_status/$', taxi_view.initial_status),
+    url(r'^track_onetime/$', taxi_view.track_onetime),
     path('chat/', include('chat.urls')),
     path('room/', taxi_view.track),
 ]
